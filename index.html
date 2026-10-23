@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quiet Shift | Your own AI operating team, on your computer</title>
 <meta name="description" content="An AI team that reads your mail and files, drafts in your voice, and builds a desk for any job you name. Installed on your own computer in a day. It never sends without you.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="favicon-192.png">
+<meta property="og:title" content="Quiet Shift | Your own AI operating team, on your computer">
+<meta property="og:description" content="Installed on your own computer in a day. It never sends without you.">
+<meta property="og:image" content="https://getquietshift.com/og.png">
+<meta property="og:url" content="https://getquietshift.com/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -46,6 +54,12 @@
   .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .fine{color:var(--soft);font-size:.86rem;margin-top:12px}
   .thanks{display:none;background:#fff6e3;border:1px solid var(--amber);border-radius:12px;padding:18px;margin-top:20px;font-weight:700}
+  .prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:26px}
+  .price{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column}
+  .price .amt{font-size:2rem;font-weight:800;line-height:1;margin:10px 0 4px}
+  .price .per{color:var(--soft);font-size:.9rem;font-weight:600;margin-bottom:12px}
+  .price p{color:var(--soft);font-size:.97rem}
+  .price.hi{border-color:var(--amber);box-shadow:0 12px 34px rgba(232,169,72,.18)}
   footer{padding:30px 0;color:var(--soft);font-size:.88rem}
   @media(max-width:600px){.two{grid-template-columns:1fr}.hero{padding:40px 0 36px}}
 </style>
@@ -84,6 +98,16 @@
   </div>
 </div></section>
 
+<section class="white" id="prices"><div class="wrap">
+  <h2>What it costs</h2>
+  <p class="lead">Three numbers, no quote to wait for. The diagnostic is credited against setup.</p>
+  <div class="prices">
+    <div class="price"><span class="k">Diagnostic</span><div class="amt">$5,000</div><div class="per">one time, credited to setup</div><p>Where it pays off first. A cleanup so your files and contacts are readable. A look through your software and card spend for savings.</p></div>
+    <div class="price hi"><span class="k">Setup</span><div class="amt">$25,000</div><div class="per">one session</div><p>Installed and running on your real work. Inbox, replies, follow-ups, and the first desk built live for your biggest job.</p></div>
+    <div class="price"><span class="k">Monthly</span><div class="amt">$4,000</div><div class="per">a month</div><p>The weekly tune-up, new desks as you need them, and everything learned across every client we run.</p></div>
+  </div>
+</div></section>
+
 <section id="start"><div class="wrap">
   <h2>See where it pays off first</h2>
   <p class="lead">Six questions. Within one business day you get back the three places in your business where it would pay off first, and roughly how many hours a week that is. Yours to keep.</p>
@@ -91,7 +115,7 @@
     <input type="hidden" name="_subject" value="Quiet Shift: where it pays off request">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_autoresponse" value="Thanks, we have your answers. Within one business day you get the three places it would pay off first in your business, and roughly how many hours a week that is. Ace Jonas, Quiet Shift">
+    <input type="hidden" name="_autoresponse" value="Thanks, we have your answers. Within one business day you get the three places it would pay off first in your business, and roughly how many hours a week that is. Ace Jonas, Quiet Shift, ace@getquietshift.com">
     <input type="hidden" name="_next" value="">
     <input type="text" name="_honey" style="display:none">
     <div class="two">
@@ -111,7 +135,7 @@
   </form>
 </div></section>
 
-<footer><div class="wrap">Quiet Shift &middot; Sea Cliff, New York &middot; <a href="mailto:ace@acejonas.com" style="color:inherit">ace@acejonas.com</a></div></footer>
+<footer><div class="wrap">Quiet Shift &middot; Sea Cliff, New York &middot; <a href="mailto:ace@getquietshift.com" style="color:inherit">ace@getquietshift.com</a></div></footer>
 <script>
   var f=document.querySelector("form");f._next.value=location.href.split("?")[0].split("#")[0]+"?sent=1#start";
   if(location.search.indexOf("sent=1")>-1){document.getElementById("thanks").style.display="block";}
